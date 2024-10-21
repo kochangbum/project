@@ -1,0 +1,16 @@
+/* 테이블 옵션 (페이지네이션을 테이블 우측 상단에 배치) */
+.table-options-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

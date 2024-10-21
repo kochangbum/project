@@ -1,0 +1,124 @@
+/* 모달 컨테이너 */
+.modal-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  font-family: "Arial", sans-serif;
+}
+
+/* 상단 구분선 */
+.top-divider {
+  margin: 20px 0 10px 0;
+  border: none;
+  border-top: 5px solid #000000;
+}
+
+/* 중간 구분선 */
+.mid-divider {
+  margin: 10px 0 20px 0;
+  border: none;
+  border-top: 2px solid #000000;
+}
+
+/* 하단 구분선 */
+.bottom-divider {
+  margin: 30px 0;
+  border: none;
+  border-top: 5px solid #000000;
+}
+
+/* 얇은 구분선 스타일 */
+.thin-divider {
+  border: none;
+  border-top: 0px solid #ccc; /* 매우 얇은 구분선 */
+  margin: 30px 0;
+}
+
+/* 제목 스타일 */
+.inquiry-header {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left; /* 제목을 왼쪽으로 정렬 */
+}
+
+/* 작성일, 조회수를 한 줄에 배치 */
+.inquiry-meta-info {
+  display: flex;
+  justify-content: space-between; /* 작성자와 나머지 항목을 양쪽 끝에 배치 */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.inquiry-info {
+  display: flex;
+  gap: 5px; /* 작성일과 조회수 사이의 간격을 설정 */
+}
+
+/* 내용 제목 스타일 */
+h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* 내용 섹션 스타일 */
+.inquiry-content {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #444;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* 이미지 및 파일 */
+.inquiry-image {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.inquiry-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* 관리자 답변 섹션 */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+  resize: vertical;
+}
+
+textarea::placeholder {
+  color: #ccc;
+}
+
+.inquiry-details {
+  max-height: 400px; /* 모달의 최대 높이를 설정 */
+  overflow-y: auto; /* 내용이 넘칠 경우 세로 스크롤 활성화 */
+  padding: 16px;
+}
+
+.inquiry-content {
+  white-space: pre-wrap; /* 줄바꿈을 유지하면서 글 표시 */
+  word-wrap: break-word; /* 긴 단어는 자동으로 줄 바꿈 */
+}
+
+.custom-modal {
+  width: 80%; /* 모달의 너비를 화면의 80%로 설정 */
+  max-width: 900px; /* 최대 너비 설정 */
+  max-height: 90%; /* 모달의 최대 높이를 90%로 설정 */
+  overflow-y: auto; /* 내용이 넘칠 경우 세로 스크롤 활성화 */
+}
